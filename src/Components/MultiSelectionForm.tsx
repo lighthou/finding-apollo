@@ -4,11 +4,11 @@ import { createUseStyles } from "react-jss";
 import MultiSelectionIcon, {
   MultiSelectionIconState,
 } from "./MultiSectionIcon";
-import ApolloLocation from "./ApolloLocation";
-import ApolloTime from "./ApolloTime";
+import ApolloLocation from "./FormScreens/ApolloLocation";
+import ApolloTime from "./FormScreens/ApolloTime";
 import ApolloOwnerInformation, {
   OwnerInformationProps,
-} from "./ApolloOwnerInformation";
+} from "./FormScreens/ApolloOwnerInformation";
 
 export interface MultiSelectionFormSectionProps {
   title: string;
@@ -65,7 +65,6 @@ const useStyles = createUseStyles({
       transform: "translateX(calc(100% + 10px))",
     },
     "&:hover": {
-      animation: "fadeIn ease 1s",
       "&:after": {
         display: "block",
       },

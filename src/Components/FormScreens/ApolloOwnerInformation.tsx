@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FunctionComponent, useState } from "react";
-import { MultiSelectionFormSectionProps } from "./MultiSelectionForm";
+import { MultiSelectionFormSectionProps } from "../MultiSelectionForm";
 import { createUseStyles } from "react-jss";
-import { MultiSelectionIconState } from "./MultiSectionIcon";
+import { MultiSelectionIconState } from "../MultiSectionIcon";
 
 const useStyles = createUseStyles({
   divider: {

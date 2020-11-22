@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from "react";
-import { MultiSelectionFormSectionProps } from "./MultiSelectionForm";
-import { MultiSelectionIconState } from "./MultiSectionIcon";
+import { MultiSelectionFormSectionProps } from "../MultiSelectionForm";
+import { MultiSelectionIconState } from "../MultiSectionIcon";
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
