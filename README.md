@@ -1,3 +1,32 @@
+# Bit of a rundown
+Here's a brief rundown so it's a bit clearer what I've done.       
+
+## The Multi Section Nav
+
+I started off by making an enum to represent what states the icons could be in (available/unavailable/completed/invalid), and (since it conviniently worked not that it's good practice), assigned the appropriate colours to those enums.   
+
+So MultiSectionIcon.tsx is a simple component that will take one of those states (and whether the icon is active or not) and appropriately return the icon necessary and colour necessary. This way the parent can simply track the 'state' of each icon and which icon is active to have access to all the colours and icons needed. It also meant, since the parent will have access to each of the screens 'states' which each map to a colour, the parent also has access to what colours the lines in between sections need to be.
+
+## Tooltip over Icons
+
+I wasn't getting the cssarrowplease to work effectively for this, so I went a different route for the tooltip. Which left me where the 'content' is needed to be specified to get the appropriate text in the tooltip. At this point I didn't want to spend more time on this so while the tooltips are there they dont work properly. 
+
+## The Forms
+
+To be honest these were done pretty ad-hoc since I spent more time thinking about the other stuff. Which to be fair it said they can be whatever...so they are.
+
+## Weirdness
+
+I think there's probably some residual confusing things around given that I tried to pivot how the component would work. Started off trying to make a generic component that could take in screens and appropriately handle creating navigation between those screens etc etc. Ran into some problems fairly quickly.   
+
+ - You'd have to have some super dynamic stuff to handle each screen being able to update different state (e.g one screen updates name,email,phone and another updates simply a time) and it being this dynamic is probably too much effort for what it ends up providing. 
+
+Mostly the 'screens' needing to be aware of the navigation and take appropriate props to trigger state callback (I didn't really want to do non-local state for this). So I thought about passing elements and building them but it was being weird and I didn't want to spend a ton of time on this. 
+
+So for now I've just made a set number of screen that take shared props and have callbacks to update state - not ideal really but I think this is a side-effect of trying to make it generic at the start.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
