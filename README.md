@@ -1,5 +1,7 @@
 # Bit of a rundown
-Here's a brief rundown so it's a bit clearer what I've done.       
+Here's a brief rundown so it's a bit clearer what I've done.    
+
+Styling-wise I tried to just avoid any libraries other than using JSS because figured it'd make my life a bit easier for this.
 
 ## The Multi Section Nav
 
